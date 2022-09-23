@@ -8,8 +8,13 @@ body {
 	background: #70110d;
 	color: #fff;
 	font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
 }
-
+header{
+    display: flexbox;
+    text-align: center;
+    align-items: center;
+}
 .contenedor {
 	width: 90%;
 	max-width: 1200px;
@@ -45,7 +50,7 @@ body {
 
 .card {
 	border-radius: 10px;
-	min-height: 200px;
+	min-height: 320px;
 	font-weight: bold;
 	padding: 20px;
 	position: relative;
@@ -58,6 +63,14 @@ body {
 	
 }
 
+.tf{
+    color: #000;
+    justify-content: left;
+}
+.listado{
+    text-align: center;
+}
+
 #formas{
     border-radius: 10px;
 	min-height: 200px;
@@ -68,6 +81,13 @@ body {
 	background-size: cover;
 	background-position: center center;
     background-color: white;
+}
+
+.f1{
+    grid-row: 1/1;
+    grid-column: 1/3;
+    height: 450px;
+
 }
 .card .textos {
 	height: 100%;
@@ -91,11 +111,7 @@ body {
 
 }
 
-.banner ul {
-	list-style: none;
-}
-
-.banner ul li {
+.banner .final {
 	margin: 15px;
 	font-weight: bold;
 }
@@ -113,6 +129,9 @@ body {
 	font-family: 'Roboto', sans-serif;
 	cursor: pointer;
 }
+.ultima{
+    grid-column: 2/4;
+}
 
 @media screen and (max-width: 900px) {
 	
@@ -123,5 +142,43 @@ body {
 }
 
 @media screen and (max-width: 600px) {
+    .contenedor {
+        width: 90%;
+        max-width: 1200px;
+        margin: auto;
+        padding: 40px 0;
+        
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 20px;
+    
+        /* flexbox
+        display: flex;
+        gap: 20px;*/
+        
+    }
+
+.contenedor-andres {
+	/* flexbox
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;*/
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    grid-column: 1/2;
 
 }
+.f1{
+    grid-row: 1/1;
+    grid-column: 1/1;
+    height: 65vh;
+
+}
+.ultima{
+    grid-column: 1/1;
+}
+}
+
