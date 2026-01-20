@@ -73,7 +73,7 @@ header{
 
 #formas{
     border-radius: 10px;
-	min-height: 200px;
+	min-height: min-content;
 	font-weight: bold;
 	padding: 20px;
 	position: relative;
